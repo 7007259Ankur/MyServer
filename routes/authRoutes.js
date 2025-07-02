@@ -43,7 +43,7 @@ router.get(
       { expiresIn: '7d' }
     );
 
-    const redirectUrl = `http://localhost:5173/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify(req.user))}`;
+    const redirectUrl = `https://medixpert.netlify.app/oauth-success?token=${token}&user=${encodeURIComponent(JSON.stringify(req.user))}`;
 res.redirect(redirectUrl);
 
   }
